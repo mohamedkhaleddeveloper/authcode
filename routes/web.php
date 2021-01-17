@@ -50,6 +50,8 @@ Route::prefix('admin')->group( function(){
 // clients in cpanel 
 Route::resource('clients','ClientController');
 Route::get('clients/codes/{client}','ClientController@codes')->name('clients.codes');
+Route::get('client/search','ClientController@search')->name('clients.search');
+Route::get('client/searchs','ClientController@searchByMobile')->name('clients.search.submit');
 
 // product in cpanel 
 Route::resource('products','ProductsController');

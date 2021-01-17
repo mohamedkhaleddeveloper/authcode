@@ -239,10 +239,16 @@
               </li>
               <li class=" nav-item pt-1">
                   <a href="{{ route('clients.index') }}">
-                      <i class="icon-layers"></i>
+                      <i class="icon-user"></i>
                       <span class="menu-title" data-i18n="nav.support_raise_support.main">{{__('Clients')}}</span>
                   </a>
               </li>
+              <li class=" nav-item pt-1">
+                <a href="{{ route('clients.search') }}">
+                    <i class="icon-magnifier"></i>
+                    <span class="menu-title" data-i18n="nav.support_raise_support.main">{{__('Client Search')}}</span>
+                </a>
+            </li>
               <li class=" nav-item pt-1">
                 <a href="{{ route('products.index') }}">
                     <i class="icon-layers"></i>

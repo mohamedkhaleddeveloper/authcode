@@ -36,6 +36,22 @@ class ClientController extends Controller
         return view('clients.index',compact('clients'))->with('i',(request()->input('page',1)-1)*5);
     }
 
+    public function search()
+    {
+        
+        //
+        App::setlocale(Auth::user()->lang);
+        return view('clients.search');
+    }
+    public function searchByMobile(Request $request)
+    {
+        
+        //
+        App::setlocale(Auth::user()->lang);
+        $client = client::where('mobile', $request->mobile)->first();
+        return view('clients.show',compact('client'));
+    }
+
    
     public function codes(client $client)
     {

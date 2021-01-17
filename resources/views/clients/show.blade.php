@@ -11,7 +11,7 @@
                         <div class="card-header">
                     <div class="col-lg-12">
                         <div class="float-left">
-                            <h2>Create New Clients</h2>
+                            <h2>{{__('Client Name')}} :- {{$client->name_ar}}</h2>
                         </div>
                         <div class="float-right">
                             <a class="btn btn-primary" href="{{ route('clients.index') }}"> Back</a>
